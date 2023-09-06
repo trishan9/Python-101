@@ -21,4 +21,4 @@ i = tup.index("JavaScript")
 print(i)
 
 # Print, JavaScript, C++ and Go only with Tuple Slicing
-print(tup[4:-1:2])
+print(tup[4:-1:2]) # Negative Indexing means length -1, for eg: here -1 means len(tup) - 1
