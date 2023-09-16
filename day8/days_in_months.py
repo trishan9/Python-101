@@ -13,7 +13,7 @@ def is_leap(year):
     return False
 
 def days_in_month(year, month):
-  is_leap_year = is_leap(year)
+  is_leap_year = is_leap(year)  
   total_days = month_days[month - 1]
   if is_leap_year and month == 2:
     total_days += 1
