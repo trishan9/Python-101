@@ -134,7 +134,7 @@ def run_coffee_machine():
                 else:
                     print("Sorry that's not enough money. Money refunded.")
             else:
-                return ""
+                pass
             run_coffee_machine()
         else:
             print("Invalid Choice!")
