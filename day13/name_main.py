@@ -1,0 +1,1 @@
+import greet #prints Trishan because greet() is called in greet module, can be solved by using __name__ == "__main__"
