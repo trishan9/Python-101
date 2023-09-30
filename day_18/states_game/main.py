@@ -44,17 +44,9 @@ else:
     print("You guessed all the states of U.S.")
 
 
-missed_states = []
-x_coor = []
-y_coor = []
-
-for state in states_name:
-    if state not in guessed_states:
-        missed_states.append(state)
-        
-for state in missed_states:
-    x_coor.append(get_x_coordinate(state))
-    y_coor.append(get_y_coordinate(state))
+missed_states = [state for state in states_name if state not in guessed_states]
+x_coor = [get_x_coordinate(state) for state in missed_states]
+y_coor = [get_y_coordinate(state) for state in missed_states]
 
 states_to_learn = {
     "state": missed_states,
